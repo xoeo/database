@@ -34,10 +34,10 @@ BEGIN
     SET @cNewStructure = '11';
     SET @cNewContent = '36';
                             -- DESCRIPTION IS 30 Characters MAX    
-    SET @cNewDescription = 'Set_Demon_Portal_to_close_for_15_minutes.';
+    SET @cNewDescription = 'Demon_Portal_close_Time';
 
                         -- COMMENT is 150 Characters MAX
-    SET @cNewComment = 'Set_Demon_Portal_to_close_for_15_minutes.';
+    SET @cNewComment = 'Demon_Portal_close_Time';
 
     -- Evaluate all settings
     SET @cCurResult := (SELECT description FROM db_version ORDER BY `version` DESC, STRUCTURE DESC, CONTENT DESC LIMIT 0,1);
